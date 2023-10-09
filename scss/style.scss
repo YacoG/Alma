@@ -4,7 +4,7 @@
 
 header{
     .banner{
-        width: auto;
+        width: 100%;
         overflow: hidden;
         position: relative;
         margin-bottom: 5px;
@@ -16,7 +16,8 @@ header{
             color: #C8E0CA;
             position: absolute;
             top: 100px;
-            left: 80px;
+            left: 100px;
+            right: 100px;
             text-align: center;
             font-family: DM sans;
         }
@@ -67,7 +68,7 @@ header{
 }
 
 .banner2{
-    width: auto;
+    width: 100%;
     margin-bottom: 5px;
     img{
         max-width: 100%;
@@ -76,20 +77,3 @@ header{
 
 
 /* MEDIA QUERIS*/
-@media (max-width:320px){
-    .banner{
-        width: 100%;
-        h1{
-            color: #C8E0CA;
-            position: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-family: DM sans;
-        }
-    } 
-}
-
-@media (max-width:375px){
-
-}
