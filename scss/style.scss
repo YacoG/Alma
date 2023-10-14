@@ -1,59 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=DM+sans:500,700&display=sswap');
 
-/*MEDIA QUERIS*/
-
-    
-
-  /* Estilos para tablet (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-}
-
-  /* Estilos para pantalla grande (más de 1024px) */
-@media (min-width: 1024px) {
-
-}
-
-html, body {
-    font-family: Raleway, sans-serif;  
-    background-color: #fff;
-}
-
-header{
-    /* Estilos para la versión móvil (menos de 768px) */
-@media (max-width: 767px) {
-        img{
-            filter: blur(0.6px);
-            width: 100%;
-            margin-bottom: 5px;
-        }
-	.navegacion {
-        ul {
-            list-style-type: none;
-            overflow: hidden;
-            background-color: #145858;
-            padding: 3%;
-        }
-        li {
-            float:left;
-            margin-right: 7px;
-            margin-left: 4px;
-        }
-        li a {
-            color: white;
-            text-decoration: none;
-        }
-          /* Change the link color to #111 (black) on hover */
-        li a:hover {
-            background-color: #F7B318;
-        }
-    }
-}
-}
-
-
-
 /* Colors */
-
 $dk-blue: #1E83AE;
 $blue: #3D5B94;
 $light-blue: #3DACDD;
@@ -61,47 +8,108 @@ $green: #6dcd9a;
 $social-size: 1.2em;
 $social-width: 20%;
 
+/* Estilos para la versión móvil (menos de 768px) */
+img {
+    filter: blur(0.6px);
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+nav {
+    $color-primary: #333;
+    $menu-width: 250px;
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: $color-primary;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    }
+
+    // Estilos para ocultar el input en pantallas grandes
+    #menu-toggle {
+        display: none;
+    }
+
+    // Estilos para el menú
+    .menu {
+        list-style: none;
+        padding: 0;
+      display: none; // Inicialmente ocultar el menú
+
+        li {
+            margin: 10px;
+        }
+    }
+
+    // Mostrar el menú cuando la casilla está marcada
+    #menu-toggle:checked + .menu {
+        display: block;
+    }
+}
 
 
+html, body {
+    font-family: Raleway, sans-serif;
+    background-color: #fff;
+}
 
+/* Estilos para tablet (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega estilos para tablet si es necesario */
+}
 
+/* Estilos para pantalla grande (más de 1024px) */
+@media (min-width: 1024px) {
+  /* Agrega estilos para pantalla grande si es necesario */
+}
+
+/* Estilos para el footer */
 footer {
     width: 100%;
     display: inline-block;
     margin: 0 0 0 0;
     height: 70px;
 
-    .copyright {
+.copyright {
     width: 100%;
     float: left;
-    background-color:#145858;
+    background-color: #145858;
     p {
         display: flex;
         text-align: center;
         justify-content: center;
-        margin-top: 20px ;
+        margin-top: 20px;
         color: white;
-        font-size: 0.7em;  
+        font-size: 0.7em;
         text-transform: capitalize;
     }
     }
-.social {
+
+    .social {
     width: 100%;
     float: right;
+
     a {
         float: left;
         line-height: 70px;
         text-decoration: none;
         color: white;
         text-align: center;
-        font-weight: bold; 
+        font-weight: bold;
         &:hover {
-        background-color: #222;
+            background-color: #222;
         }
     }
     }
 }
 
+/* Estilos para los íconos sociales */
 .youtu {
     background-color: #c4302b;
     font-size: $social-size;
@@ -125,3 +133,16 @@ footer {
     font-size: 0.8em;
     width: 40%;
 }
+
+/* Estilos para la barra lateral */
+aside {
+    div {
+        p {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        }
+    }
+}
+
