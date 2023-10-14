@@ -1,5 +1,170 @@
-@import url('https://fonts.googleapis.com/css?family=DM+sans:500,700&display=sswap');
+/* Theming */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
+:root{
+    --verde: #145858;
+    --naranja: #F7B318;
+    --gris: #C8E0CA;
+    --blanco: #FFFFFF;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--blanco);
+    font-family: "Poppins", sans-serif;
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+    }
+    img {
+        filter: blur(0.6px);
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+    .header{
+    background-color: var(--verde);
+    box-shadow: 1px 1px 5px 0px var(--gris);
+    width: 100%;
+    }
+    .logo{
+        display: inline-block;
+        color: var(--gris);
+        font-size: 50px;
+        margin-left: 45px;
+    }
+    .nav{
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: var(--verde);
+        overflow: hidden;
+    }
+        .menu a{
+            display: block;
+            padding: 15px;
+            color: var(--naranja);
+        }
+        .menu a:hover{
+            background-color: var(--gris);
+        }
+        .nav{
+            max-height: 0;
+            transition: max-height .5s ease-out;
+        }
+        .hamb{
+            cursor: pointer;
+            float: right;
+            padding: 40px 20px;
+        }
+        
+        .hamb-line {
+            background: var(--naranja);
+            display: block;
+            height: 2px;
+            position: relative;
+            width: 24px;
+        
+        } 
+        
+        .hamb-line::before,
+        .hamb-line::after{
+            background: var(--gris);
+            content: '';
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all .2s ease-out;
+            width: 100%;
+        }
+        .hamb-line::before{
+            top: 5px;
+        }
+        .hamb-line::after{
+            top: -5px;
+        }
+        
+        .side-menu {
+            display: none;
+        } 
+
+    .side-menu:checked ~ nav{
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+    @media (min-width: 768px) {
+        .nav{
+            max-height: none;
+            top: 0;
+            position: relative;
+            float: right;
+            width: fit-content;
+            background-color: transparent;
+        }
+        .menu li{
+            float: left;
+        }
+        .menu a{
+            padding:30px;
+        }
+        .menu a:hover{
+            background-color: transparent;
+            color: var(--gris);
+    
+        }
+    
+        .hamb{
+            display: none;
+        }
+    }
+    /* Sub nav */
+    .subnav-content {
+        background-color:  var(--verde);
+        z-index: 1;
+        padding: 20px 0 ;
+        display: none;
+    }
+    .subnav-content a {
+        color: var(--naranja);
+        text-decoration: none;
+        padding: 0;
+        margin: 5px 0;
+        display: flex;
+        text-align: center;
+    }
+    .subnav:hover .subnav-content {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        /* Sub nav */
+        .subnav-content {
+            padding: 10px;
+            display: none;
+            background-color:  var(--verde);
+    }
+        .subnav-content a {
+        color: var(--naranja);
+    }
+}
+/* Estilos para el footer */
 /* Colors */
 $dk-blue: #1E83AE;
 $blue: #3D5B94;
@@ -7,69 +172,7 @@ $light-blue: #3DACDD;
 $green: #6dcd9a;
 $social-size: 1.2em;
 $social-width: 20%;
-
-/* Estilos para la versión móvil (menos de 768px) */
-img {
-    filter: blur(0.6px);
-    width: 100%;
-    margin-bottom: 5px;
-}
-
-nav {
-    $color-primary: #333;
-    $menu-width: 250px;
-    .menu-icon {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: $color-primary;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
-    }
-
-    // Estilos para ocultar el input en pantallas grandes
-    #menu-toggle {
-        display: none;
-    }
-
-    // Estilos para el menú
-    .menu {
-        list-style: none;
-        padding: 0;
-      display: none; // Inicialmente ocultar el menú
-
-        li {
-            margin: 10px;
-        }
-    }
-
-    // Mostrar el menú cuando la casilla está marcada
-    #menu-toggle:checked + .menu {
-        display: block;
-    }
-}
-
-
-html, body {
-    font-family: Raleway, sans-serif;
-    background-color: #fff;
-}
-
-/* Estilos para tablet (768px a 1023px) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Agrega estilos para tablet si es necesario */
-}
-
-/* Estilos para pantalla grande (más de 1024px) */
-@media (min-width: 1024px) {
-  /* Agrega estilos para pantalla grande si es necesario */
-}
-
-/* Estilos para el footer */
+$color-primary: #333;
 footer {
     width: 100%;
     display: inline-block;
@@ -103,7 +206,7 @@ footer {
         text-align: center;
         font-weight: bold;
         &:hover {
-            background-color: #222;
+            background-color:#C8E0CA;
         }
     }
     }
@@ -129,14 +232,14 @@ footer {
 }
 
 .support {
-    background-color: #C8E0CA;
+    background-color: #F7B318 ;
     font-size: 0.8em;
     width: 40%;
 }
 
 /* Estilos para la barra lateral */
-aside {
-    div {
+main {
+    article{
         p {
         display: flex;
         text-align: center;
@@ -145,4 +248,3 @@ aside {
         }
     }
 }
-
