@@ -1,53 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=DM+sans:500,700&display=sswap');
 
 /*MEDIA QUERIS*/
-@media screen and (max-width: 320px){
-    header{
-        img{
-            filter: blur(0.6px);
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 5px;
-        }   
-    }
+
+    
+
+  /* Estilos para tablet (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
 }
 
-@media screen and (min-width: 375px){
-    header{
-        img{
-            filter: blur(0.6px);
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            margin-bottom: 5px;
-        }
-    }
+  /* Estilos para pantalla grande (más de 1024px) */
+@media (min-width: 1024px) {
+
 }
+
+html, body {
+    font-family: Raleway, sans-serif;  
+    background-color: #fff;
+}
+
 header{
+    /* Estilos para la versión móvil (menos de 768px) */
+@media (max-width: 767px) {
         img{
             filter: blur(0.6px);
             width: 100%;
-            overflow: hidden;
-            position: relative;
             margin-bottom: 5px;
         }
 	.navegacion {
         ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
             overflow: hidden;
             background-color: #145858;
+            padding: 3%;
         }
         li {
             float:left;
+            margin-right: 7px;
+            margin-left: 4px;
         }
         li a {
-            display: block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
         }
           /* Change the link color to #111 (black) on hover */
@@ -55,6 +47,7 @@ header{
             background-color: #F7B318;
         }
     }
+}
 }
 
 
@@ -68,48 +61,33 @@ $green: #6dcd9a;
 $social-size: 1.2em;
 $social-width: 20%;
 
-* {
-    margin: 0;
-    padding: 0;
-    
-}
 
-html, body {
-    font-family: Raleway, sans-serif;  
-    background-color: #fff;
-}
+
+
 
 footer {
     width: 100%;
     display: inline-block;
-    margin: 2em 0;
+    margin: 0 0 0 0;
     height: 70px;
-    background-color:#145858;
+
     .copyright {
-    width: 50%;
-    float: left;
-    @media (max-width: 600px) {
     width: 100%;
-    }
+    float: left;
+    background-color:#145858;
     p {
-        padding-left: 10%;
-        color: white;
-        font-size: 0.7em;
-        line-height: 70px;
-        text-transform: capitalize;
-        letter-spacing: 1px;
-        @media (max-width: 600px) {
+        display: flex;
         text-align: center;
-        padding: 0;
-        }
+        justify-content: center;
+        margin-top: 20px ;
+        color: white;
+        font-size: 0.7em;  
+        text-transform: capitalize;
     }
     }
 .social {
-    width: 50%;
-    float: right;
-    @media (max-width: 600px) {
     width: 100%;
-    }
+    float: right;
     a {
         float: left;
         line-height: 70px;
