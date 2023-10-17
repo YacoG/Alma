@@ -22,12 +22,17 @@ body{
     ul{
         list-style: none;
     }
-    img {
-        filter: blur(0.6px);
-        width: 100%;
-        margin-bottom: 5px;
+    main{
+        div{
+            .img1 {
+                filter: blur(0.6px);
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
     }
 }
+
 
     .header{
     background-color: var(--verde);
@@ -39,6 +44,7 @@ body{
         color: var(--gris);
         font-size: 50px;
         margin-left: 45px;
+        font-family: "Poppins", sans-serif;
     }
     .nav{
         width: 100%;
@@ -311,5 +317,13 @@ main {
             height: 480px;
         }
         
+    }
+}
+
+/*sass para seccion Cursos*/
+.tituloC{
+    h2{
+        margin-left: 15px;
+        font-family: "Poppins", sans-serif;
     }
 }
