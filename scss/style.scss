@@ -1,6 +1,5 @@
 /* Theming */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
-
 :root{
     --verde: #145858;
     --naranja: #F7B318;
@@ -30,8 +29,16 @@ body{
                 margin-bottom: 5px;
             }
         }
+        article{
+            .img3{
+                width: 100%;
+                padding: 2%;
+            }
+        }
     }
 }
+/*ajuste de tamaño de las cards*/
+
 
 
     .header{
@@ -289,6 +296,10 @@ main {
             p{
                 font-size: 18px;
             }
+            .img3{
+                height: 550px;
+                width: 550px;
+            }
         }
         img{
             width: 100%;
@@ -311,14 +322,28 @@ main {
             p{
                 font-size: 25px;
             }
+            .img3{
+                width: 750px;
+                height: 750px;
+                
+            }
         }
         img{
             width: 100%;
             height: 480px;
         }
-        
+        section{
+            div{
+                .imagencard{
+                    margin-top: 10px;
+                    width: 550px;
+                    height: 250px;
+                }
+            }
+        }
     }
 }
+
 
 /*sass para seccion Cursos*/
 .tituloC{
