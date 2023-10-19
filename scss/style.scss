@@ -32,8 +32,27 @@ body{
                 width: fit-content;
                 height: fit-content;
             }
+            .img4{
+                width: 150px;
+                height: 150px;
+                display: flex;
+                margin: auto;
+                margin-top: 15px;
+                margin-bottom: 5px;
+            }
+            .texto2{
+                display:flex;
+                text-align: center;
+                justify-content: center;
+                margin-bottom: 15px;
+            }
         }
         article{
+            .texto1{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+            }
             .img3{
                 width: 100%;
                 padding: 2%;
@@ -124,18 +143,6 @@ footer {
     width: 40%;
 }
 
-/* Estilos para la barra lateral */
-main {
-    article{
-        p {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        padding: 5px;
-        } 
-}
-}
-
 
 @media (min-width: 320px) and (max-width: 500px) {
     main{
@@ -148,13 +155,7 @@ main {
                 color: black;
             }
         }
-        img{
-            width: 100%;
-            height: 190px;
-        }
     }
-
-
 }
 
 
