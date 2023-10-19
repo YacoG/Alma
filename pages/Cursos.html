@@ -15,102 +15,111 @@
     <title>Cursos</title>
 </head>
 <body>
-    <header class="header">
-        <a href="../index.html" class="logo">ALMA</a>
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="/index.html">INICIO</a></li>
-                <li class="subnav">
-                    <a  href="../pages/Cursos.html" class="subnavbtn">CURSOS<i class="fa fa-caret-down"></i></a>
-                    <div class="subnav-content">
-                        <a href="../pages/curso-barista.html">-Curso de Barista.</a>
-                        <a href="../pages/curso-barista.html">-Curso de Calibracion.</a>
-                        <a href="../pages/curso-latteart.html">-Curso de Latte Art.</a>
-                        <a href="../pages/curso-filtrado.html">-Curso de Filtrado.</a>
-                        <a href="../pages/curso-tueste.html">-Curso de Tueste.</a>
-                    </div>
-                </li>
-                <li><a href="../pages/Talleres.html">TALLERES</a></li>
-                <li><a href="../pages/Contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-tertiary fondo2">
+        <div class="container-fluid fondo2">
+            <a class="navbar-brand" href="../index.html">Alma</a>
+            <button class="navbar-toggler fondo" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./Cursos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Cursos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./curso-barista.html">Barista Inicial</a></li>
+                            <li><a class="dropdown-item" href="./curso-filtrado.html">Curso de Filtrado</a></li>
+                            <li><a class="dropdown-item" href="./curso-calibracion.html">Curso de Calibracion</a></li>
+                            <li><a class="dropdown-item" href="./curso-latteart.html">Curso de Latte Art</a></li>
+                            <li><a class="dropdown-item" href="./curso-tueste.html">Curso de Tueste</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Talleres.html">Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <main>
         <div class="tituloC">
-            <h2>CURSOS</h2>
+            <h1>CURSOS</h1>
         </div>
             <aside>
-                <section class="row mx-auto">
-                    <div class="card text-center border border-warning col-sm-8 col-sm-12 col-lg-10 col-xl-10 mb-1 mt-4">
-                        <div class="card-header">
-                            Barista Inicial
+                        <div class="">
+                            <h2>Barista Inicial</h2>
                         </div>
                         <div>
                             <img src="../assets/barista.jpg" class="imagencard" alt="barista">
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="">
+                            <p class="">
                                 El Curso de Barista Inicial esta enfocado al servicio de gastronomia, esta creado meticulosamente para poder abarcar el mayor tiempo en practicar las tecnicas de preparacion de las bebidas.
                             </p>
-                            <a href="./curso-barista.html" class="btn btn-primary">Ir al Curso</a>
+                            <a href="./curso-barista.html" class="">Ir al Curso</a>
                         </div>
                     </div>
-                    <div class="card text-center border border-warning col-sm-12 col-sm-12 col-lg-6 col-xl-6 mb-1">
-                        <div class="card-header">
-                            Curso de Calibracion
+                    <div class="">
+                        <div class="">
+                            <h2>Curso de Calibracion</h2>
                         </div>
                         <div>
                             <img src="../assets/espresso.jpg"  class="imagencard" alt="barista">
                         </div>
-                        <div class="card-body">
+                        <div class="">
                             <p class="card-text">
                                 El Curso de calibracion esta enfocado en aprender las tecnicas de la calibracion del cafe, pasando por lo sensorial y verificando cada paso para poder reconocer cada detalle. 
                             </p>
-                            <a href="./curso-barista.html" class="btn btn-primary">Proximamente...</a>
+                            <a href="./curso-barista.html" class="">Proximamente...</a>
                         </div>
                     </div>
-                    <div class="card text-center border border-warning col-sm-12 col-sm-12 col-lg-6 col-xl-6 mb-1">
-                        <div class="card-header">
-                            Curso de Latte Art
+                    <div class="">
+                        <div class="">
+                            <h2>Curso de Latte Art</h2>
                         </div>
                         <div>
                             <img src="../assets/latte art.webp" class="imagencard" alt="barista">
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class=""">
+                            <p class="">
                                 En este curso se podra practicar varias tecnicas de latte art, perfeccionar los pasos a pasos y lograr una embulsion perfecta. A su vez que una buena combinacion entre el espresso y la leche.
                             </p>
-                            <a href="./curso-barista.html" class="btn btn-primary">Proximamente...</a>
+                            <a href="./curso-barista.html" class="">Proximamente...</a>
                         </div>
                     </div>
-                    <div class="card text-center border border-warning col-sm-12 col-sm-12 col-lg-6 col-xl-6 mb-1">
-                        <div class="card-header">
-                            Curso de Filtrado
+                    <div class="">
+                        <div class="">
+                            <h2>Curso de Filtrado</h2>
                         </div>
                         <div>
                             <img src="../assets/filtrados.jpeg" class="imagencard" alt="barista">
                         </div>
-                        <div class="card-body">
+                        <div class="">
                             <p class="card-text">
                                 En el curso de Filtrado se pasara por todas las etapas necesarias las cuales son: diferentes metodos, variables, entrenamiento sensorial. Tambien se calibraran los diferentes metodos para lograr la mejor de taza.
                             </p>
-                            <a href="./curso-barista.html" class="btn btn-primary">Proximamente...</a>
+                            <a href="./curso-barista.html" class="">Proximamente...</a>
                         </div>
                     </div>
-                    <div class="card text-center border border-warning col-sm-12 col-sm-12 col-lg-6 col-xl-6 mb-4 info">
-                        <div class="card-header">
-                            Curso de Tueste
+                    <div class="">
+                        <div class="">
+                            <h2>Curso de Tueste</h2>
                         </div>
                         <div>
                             <img src="../assets/tueste.jpg"  class="imagencard" alt="barista">
                         </div>
-                        <div class="card-body">
-                            <p class="card-text">
+                        <div class="">
+                            <p class="">
                                 El tueste es una parte muy importante para la extraccion del cafe ya que gracias a este proceso activaremos ciertos componentes necesarios para sacar una buena taza de cafe, se vera el paso a paso a su vez que se tostara en live.
                             </p>
-                            <a href="./curso-barista.html" class="btn btn-primary">Proximamente...</a>
+                            <a href="./curso-barista.html" class="">Proximamente...</a>
                         </div>
                     </div>
                 </section>
@@ -129,6 +138,5 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
 </body>
 </html>
