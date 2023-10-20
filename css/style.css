@@ -25,27 +25,48 @@ body ul {
   list-style: none;
 }
 body main div .img1 {
-  filter: blur(0.6px);
   width: 100%;
-  margin-bottom: 5px;
+  padding: 2%;
 }
-body main div .imgb {
-  width: fit-content;
-  height: fit-content;
-}
-body main div .img4 {
-  width: 150px;
-  height: 150px;
-  display: flex;
-  margin: auto;
-  margin-top: 15px;
-  margin-bottom: 5px;
-}
-body main div .texto2 {
+body main div .textoB {
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 15px;
+}
+body main div .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #145858;
+  border: none;
+  color: #C8E0CA;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+body main div .button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+body main div .button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+body main div .button:hover span {
+  padding-right: 25px;
+}
+body main div .button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 body main article .texto1 {
   display: flex;
@@ -60,10 +81,15 @@ body nav {
   background-color: #C8E0CA;
 }
 body nav div {
-  background-color: #C8E0CA;
+  background-image: url("Alma/assets/escuelacafe.jpg");
 }
 body nav div .fondo {
   background-color: #145858;
+}
+body nav div .color1 {
+  color: #F7B318;
+  margin-left: 15px;
+  font-size: 30px;
 }
 
 /* Estilos para el footer */
@@ -137,8 +163,12 @@ footer .social a:hover {
     text-shadow: -0.8px 0 #F7B318, 0.8px 0 #F7B318, 0 0.8px #F7B318, 0 -0.8px #F7B318;
     color: black;
   }
+  main div .img1 {
+    height: 200px;
+    width: 150px;
+  }
 }
-@media (min-width: 505px) and (max-width: 1100px) {
+@media (min-width: 505px) and (max-width: 768px) {
   main article h3 {
     display: flex;
     text-align: center;
@@ -149,16 +179,12 @@ footer .social a:hover {
   main article p {
     font-size: 18px;
   }
-  main article .img3 {
-    height: 550px;
-    width: 550px;
-  }
-  main img {
-    width: 100%;
-    height: 350px;
+  main div .img1 {
+    width: 200px;
+    height: 380px;
   }
 }
-@media (min-width: 1150px) and (max-width: 1440px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   main article h3 {
     display: flex;
     text-align: center;
@@ -169,18 +195,14 @@ footer .social a:hover {
   main article p {
     font-size: 25px;
   }
-  main article .img3 {
-    width: 750px;
-    height: 750px;
-  }
-  main img {
-    width: 100%;
-    height: 480px;
-  }
   main section div .imagencard {
     margin-top: 10px;
     width: 550px;
     height: 250px;
+  }
+  main div .img1 {
+    width: 550px;
+    height: 550px;
   }
 }
 /*sass para seccion Cursos*/
