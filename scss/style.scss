@@ -84,6 +84,18 @@ body{
                 padding: 2%;
             }
         }
+        aside{
+            .borde{
+                border: 2px solid #F7B318;
+                margin: 10px;
+                border-radius: 4px;
+            }
+            div{
+                .titulo{
+                    margin-top: 15px;
+                }
+            }
+        }
     }
     nav{
         background-color:#C8E0CA;
@@ -191,6 +203,12 @@ footer {
                 height: 200px;
                 width: 150px;
             }
+            .textoB{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
         }
     }
 }
@@ -214,6 +232,13 @@ footer {
             .img1{
                 width: 200px;
                 height: 380px;
+            }
+            .textoB{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
             }
         }
     }
@@ -248,11 +273,45 @@ footer {
                 width: 550px;
                 height: 550px;
             }
+            .textoB{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
         }
     }
 }
 
-
+@media (min-width: 1025px) and (max-width: 1440px){
+    main{
+        article{
+            h3{
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                text-shadow: -0.8px 0 #F7B318, 0.8px 0 #F7B318, 0 0.8px #F7B318, 0 -0.8px #F7B318;
+                color: black;
+            }
+            p{
+                font-size: 25px;
+            }
+        }
+        aside{
+            div{
+                .textoB{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 150px;
+                }
+            }
+        }
+        
+    }
+}
 /*sass para seccion Cursos*/
 .tituloC{
     h2{
